@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/burger_style.css">
+    <!-- JS & jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/js/burgers.js"></script>
+    <title>Eat-Da-Burger!!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Eat-Da-Burger! - Week 12</h1>
+                <!-- <img src="assets/img/Burger-Time-video-games-36851476-384-272.gif" class="chef-burger-img" alt="Chef Burger"> -->
+                <iframe src="https://www.retrogames.cc/embed/17121-burger-time-usa.html" width="450" height="338" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+                <p class="lead">Type a burger and click Add Burger. Then devour it, then digest it.</p>
+            </div>
+            <div class="form-group">
+                <form id="addBurger">
+                    <label for="burger_name">Type a burger:</label>
+                    <input type="text" id="burger_name" name="burger">
+                    <button type="submit" class="btn btn-outline-success">Add Burger</button>
+                </form>
+            </div>
+        </div>
+
+        <section>
+            <nav>
+                <h2>Burgers on the list</h2>
+                <ul id="burgersMenu"></ul>
+            </nav>
+            <aside>
+                <h2>BURP</h2>
+                <ul id="burgersDevour"></ul>
+            </aside>
+        </section>
+    </div>
+</body>
+
+</html>
