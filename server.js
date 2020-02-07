@@ -15,6 +15,9 @@ if (process.env.JAWSDB_URL){
     })
 }
 
+connection.connect();
+module.exports = connection;
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(path.join(__dirname, "public")));
 
