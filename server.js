@@ -2,6 +2,18 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+var connection;
+
+if (process.env.JAWSDB_URL){
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection({
+        host: 'localhost',
+        user:'root',
+        password:'password',
+        database:'burgers_db'
+    })
+}
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(path.join(__dirname, "public")));
